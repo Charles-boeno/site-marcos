@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="M&F Elevadores — manutenção, modernização e instalação de elevadores com excelência, segurança e tecnologia.">
+  <title>M&F Elevadores | Manutenção e Modernização</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#" class="logo">
+        <img src="assets/logo.png?v=3" alt="M&F Elevadores" class="logo__img">
+      </a>
+      <nav class="nav" id="nav">
+        <a href="#sobre" class="nav__link">Sobre</a>
+        <a href="#servicos" class="nav__link">Serviços</a>
+        <a href="#clientes" class="nav__link">Clientes</a>
+        <a href="#faq" class="nav__link">FAQ</a>
+        <a href="#contato" class="nav__link nav__link--cta">Contato</a>
+        
+      </nav>
+      <button class="menu-btn" id="menuBtn" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+  <div class="nav-backdrop" id="navBackdrop" aria-hidden="true"></div>
+
+  <!-- Hero -->
+  <section class="hero" id="inicio">
+    <div class="hero__bg">
+      <img
+        class="hero__building"
+        src="assets/hero-building.jpg"
+        alt="Prédios modernos"
+        loading="eager"
+      >
+      <div class="hero__overlay"></div>
+      <div class="hero__grid"></div>
+      <div class="hero__glow hero__glow--1"></div>
+      <div class="hero__glow hero__glow--2"></div>
+    </div>
+    <div class="container hero__content">
+      <div class="hero__badge reveal">Desde 2018 · Excelência em elevadores</div>
+      <h1 class="hero__title reveal">
+        Especialistas em <span class="gradient-text">manutenção</span> e
+        <span class="gradient-text">modernização</span> de elevadores
+      </h1>
+      <p class="hero__subtitle reveal">
+        Precisão, excelência e tecnologia para conectar pessoas com segurança e confiança.
+      </p>
+      <div class="hero__actions reveal">
+        <a href="#contato" class="btn btn--primary">Falar com Especialista</a>
+        <a href="#servicos" class="btn btn--outline">Explorar Serviços</a>
+      </div>
+      <div class="hero__contact reveal">
+        <a href="tel:+554591583019">+55 45 9158-3019</a>
+        <span>·</span>
+        <a href="mailto:mfelevadores87@gmail.com">mfelevadores87@gmail.com</a>
+      </div>
+      <div class="hero__stats reveal">
+        <div class="hero__stat">
+          <strong>24h</strong>
+          <span>Suporte emergencial</span>
+        </div>
+        <div class="hero__stat">
+          <strong>500+</strong>
+          <span>Clientes atendidos</span>
+        </div>
+        <div class="hero__stat">
+          <strong>100%</strong>
+          <span>Conformidade NBR</span>
+        </div>
+      </div>
+    </div>
+    <a href="#sobre" class="hero__scroll" aria-label="Rolar para baixo">
+      <span>Role para baixo</span>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+    </a>
+  </section>
+
+  <!-- Sobre -->
+  <section class="section sobre" id="sobre">
+    <div class="container">
+      <div class="section__header reveal">
+        <span class="section__tag">Sobre</span>
+        <h2 class="section__title">Mais do que elevadores, conectamos pessoas com <span class="gradient-text">segurança</span></h2>
+      </div>
+      <div class="sobre__grid">
+        <div class="sobre__card reveal">
+          <div class="sobre__card-icon">⚡</div>
+          <h3>Atendimento Ágil</h3>
+          <p>Suporte 24h para garantir acessibilidade contínua sem comprometer a segurança.</p>
+        </div>
+        <div class="sobre__card reveal">
+          <div class="sobre__card-icon">🔧</div>
+          <h3>Modernização Inteligente</h3>
+          <p>Atualização técnica e estética que une conforto, eficiência e design funcional.</p>
+        </div>
+        <div class="sobre__card reveal">
+          <div class="sobre__card-icon">👷</div>
+          <h3>Equipe Especializada</h3>
+          <p>Engenheiro responsável e técnicos experientes que cuidam de cada detalhe.</p>
+        </div>
+        <div class="sobre__card reveal">
+          <div class="sobre__card-icon">🛡️</div>
+          <h3>Segurança Garantida</h3>
+          <p>Seguro de Responsabilidade Civil e adequação às normas NBR 16083/2012.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Serviços -->
+  <section class="section servicos" id="servicos">
+    <div class="container">
+      <div class="section__header reveal">
+        <span class="section__tag">Serviços</span>
+        <h2 class="section__title">Cuidamos do seu elevador em cada detalhe, <span class="section__title-muted">da manutenção preventiva à modernização.</span></h2>
+      </div>
+      <div class="servicos__grid">
+        <a href="#contato" class="servico-card reveal">
+          <img src="https://framerusercontent.com/images/owjuhwTyAXjCgfpmyJDz1lEFWMs.png?width=800" alt="Técnico realizando vistoria em elevador" loading="lazy">
+          <div class="servico-card__overlay"></div>
+          <h3 class="servico-card__title">Vistoria Inicial</h3>
+        </a>
+        <a href="#contato" class="servico-card reveal">
+          <img src="https://framerusercontent.com/images/vWxcQ9JZR3yTaFC0PtAyc3v9U.png?width=800" alt="Instalação de inversor de frequência" loading="lazy">
+          <div class="servico-card__overlay"></div>
+          <h3 class="servico-card__title">Instalação de Inversor de Frequência</h3>
+        </a>
+        <a href="#contato" class="servico-card reveal">
+          <img src="https://framerusercontent.com/images/flUVzvVEzFOI0hixxg5iTevFxM.png?width=800" alt="Adequação normativa de elevador" loading="lazy">
+          <div class="servico-card__overlay"></div>
+          <h3 class="servico-card__title">Adequação Normativa</h3>
+        </a>
+        <a href="#contato" class="servico-card reveal">
+          <img src="https://framerusercontent.com/images/rbDONC5PiSbMONPQ6U0qUtejSk8.png?width=800" alt="Modernização estética de cabina" loading="lazy">
+          <div class="servico-card__overlay"></div>
+          <h3 class="servico-card__title">Modernização Estética</h3>
+        </a>
+        <a href="#contato" class="servico-card reveal">
+          <img src="https://framerusercontent.com/images/4F4JBPcxvXXZsmSuvT9gMxSI.png?width=800" alt="Manutenção preventiva de elevador" loading="lazy">
+          <div class="servico-card__overlay"></div>
+          <h3 class="servico-card__title">Manutenção Preventiva</h3>
+        </a>
+        <a href="#contato" class="servico-card reveal">
+          <img src="https://framerusercontent.com/images/AZ8ZWcXhHHyMcra0MXqJcZJTxU4.png?width=800" alt="Manutenção corretiva de elevador" loading="lazy">
+          <div class="servico-card__overlay"></div>
+          <h3 class="servico-card__title">Manutenção Corretiva</h3>
+        </a>
+        <a href="#contato" class="servico-card reveal">
+          <img src="https://framerusercontent.com/images/swrY6Y9YQI4uLL84w9IisMFCk.png?width=800" alt="Modernização técnica de elevador" loading="lazy">
+          <div class="servico-card__overlay"></div>
+          <h3 class="servico-card__title">Modernização Técnica</h3>
+        </a>
+      </div>
+      <div class="section__cta reveal">
+        <a href="#contato" class="btn btn--outline-light">Ver Todos os Serviços</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Clientes -->
+  <section class="section clientes" id="clientes">
+    <div class="container">
+      <div class="section__header reveal">
+        <span class="section__tag">Clientes</span>
+        <h2 class="section__title">Condomínios e empresas que <span class="gradient-text">confiam</span> na M&F</h2>
+        <p class="section__desc">Mais do que manutenção, entregamos tranquilidade. Cada projeto concluído é a prova do nosso compromisso.</p>
+      </div>
+      <div class="clientes__marquee">
+        <div class="clientes__track">
+          <span>Edifício Solar Bragança</span>
+          <span>Condomínio Costa Azul</span>
+          <span>Residencial Isla Marina</span>
+          <span>Edifício Porto Velho</span>
+          <span>Condomínio Luana</span>
+          <span>Residencial Universitop</span>
+          <span>Edifício San Conrado</span>
+          <span>Volmix Plaza</span>
+          <span>Edifício Solar Bragança</span>
+          <span>Condomínio Costa Azul</span>
+          <span>Residencial Isla Marina</span>
+          <span>Edifício Porto Velho</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="cta-banner">
+    <div class="container cta-banner__inner reveal">
+      <h2>Seu elevador merece o melhor cuidado</h2>
+      <p>Agende uma vistoria gratuita e descubra como podemos modernizar seu equipamento.</p>
+      <a href="#contato" class="btn btn--white">Agendar Vistoria</a>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section faq" id="faq">
+    <div class="container">
+      <div class="section__header reveal">
+        <span class="section__tag">FAQ</span>
+        <h2 class="section__title">Perguntas <span class="gradient-text">Frequentes</span></h2>
+      </div>
+      <div class="faq__list">
+        <details class="faq__item reveal">
+          <summary>Como funciona a manutenção preventiva de elevadores?</summary>
+          <p>Realizamos visitas periódicas conforme a periodicidade exigida pela norma, com checklist completo de inspeção, lubrificação, ajustes e substituição de peças de desgaste.</p>
+        </details>
+        <details class="faq__item reveal">
+          <summary>O que está incluso no atendimento emergencial 24h?</summary>
+          <p>Nossa equipe está disponível 24 horas para atender chamados de emergência, como pessoas presas na cabina, falhas de funcionamento e situações de risco.</p>
+        </details>
+        <details class="faq__item reveal">
+          <summary>A M&F Elevadores trabalha com adequação normativa?</summary>
+          <p>Sim. Realizamos adequação completa às normas ABNT NBR 16083/2012 e demais regulamentações, com laudo e documentação para o condomínio.</p>
+        </details>
+        <details class="faq__item reveal">
+          <summary>É possível modernizar apenas a parte estética do elevador?</summary>
+          <p>Com certeza. Oferecemos pacotes de modernização estética com nova cabina, piso, espelhos, iluminação LED e painéis de comando sem necessidade de troca de componentes técnicos.</p>
+        </details>
+        <details class="faq__item reveal">
+          <summary>A empresa possui engenheiro responsável?</summary>
+          <p>Sim. Todos os nossos serviços são supervisionados por engenheiro mecânico responsável, com ART emitida para cada contrato.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section class="section contato" id="contato">
+    <div class="container contato__grid">
+      <div class="contato__info reveal">
+        <span class="section__tag">Contato</span>
+        <h2 class="section__title">Fale com nossa <span class="gradient-text">equipe</span></h2>
+        <p>Estamos prontos para atender você. Solicite um orçamento ou tire suas dúvidas.</p>
+        <div class="contato__details">
+          <a href="tel:04591583019" class="contato__item">
+            <span class="contato__item-icon">📞</span>
+            <div>
+              <strong>Telefone / WhatsApp</strong>
+              <span>045 9158-3019</span>
+            </div>
+          </a>
+          <a href="mailto:mfelevadores87@gmail.com" class="contato__item">
+            <span class="contato__item-icon">✉️</span>
+            <div>
+              <strong>E-mail</strong>
+              <span>mfelevadores87@gmail.com</span>
+            </div>
+          </a>
+          <a href="https://wa.me/554591583019" class="contato__item" target="_blank" rel="noopener">
+            <span class="contato__item-icon">💬</span>
+            <div>
+              <strong>WhatsApp</strong>
+              <span> 45 9158-3019</span>
+            </div>
+          </a>
+          <div class="contato__item">
+            <span class="contato__item-icon">📍</span>
+            <div>
+              <strong>Atendimento</strong>
+              <span>Oeste do Paraná · Região DDD 45</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <form class="contato__form reveal" id="contactForm">
+        <div class="form-group">
+          <label for="nome">Nome completo</label>
+          <input type="text" id="nome" name="nome" required placeholder="Seu nome">
+        </div>
+        <div class="form-group">
+          <label for="telefone">Telefone</label>
+          <input type="tel" id="telefone" name="telefone" required placeholder="(00) 00000-0000">
+        </div>
+        <div class="form-group">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" placeholder="seu@email.com">
+        </div>
+        <div class="form-group">
+          <label for="mensagem">Mensagem</label>
+          <textarea id="mensagem" name="mensagem" rows="4" required placeholder="Como podemos ajudar?"></textarea>
+        </div>
+        <p class="form-feedback" id="formFeedback" role="status" aria-live="polite"></p>
+        <button type="submit" class="btn btn--primary btn--full">Enviar Mensagem</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a href="#" class="logo">
+        <img src="assets/logo.png?v=3" alt="M&F Elevadores" class="logo__img">
+      </a>
+      <nav class="footer__nav">
+        <a href="#sobre">Sobre</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#clientes">Clientes</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contato">Contato</a>
+      </nav>
+      <p class="footer__copy">&copy; 2026 M&F Elevadores · +55 45 9158-3019 · mfelevadores87@gmail.com</p>
+    </div>
+  </footer>
+
+  <!-- WhatsApp flutuante -->
+  <a href="https://wa.me/554591583019" class="whatsapp-btn" target="_blank" rel="noopener" aria-label="WhatsApp +55 45 9158-3019">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.881 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
