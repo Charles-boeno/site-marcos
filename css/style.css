@@ -159,9 +159,9 @@ img { max-width: 100%; display: block; }
 }
 
 .logo__img {
-  height: clamp(44px, 6vw + 20px, 72px);
+  height: clamp(58px, 7vw, 92px);
   width: auto;
-  max-width: min(220px, 55vw);
+  max-width: min(290px, 62vw);
   display: block;
   object-fit: contain;
   background: transparent;
@@ -761,6 +761,73 @@ img { max-width: 100%; display: block; }
 /* ===== Responsive ===== */
 
 /* Tablet landscape / small laptop */
+
+/* ===== Ajustes de responsividade e logo ===== */
+@media (max-width: 992px) {
+  .header { padding: 10px 0; }
+  .logo__img { height: 70px; max-width: 250px; }
+  .nav { gap: 2px; }
+  .nav__link { padding: 8px 11px; }
+  .servicos__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 768px) {
+  .header { padding: 8px 0; }
+  .header__inner { min-height: 64px; }
+  .logo__img { height: 62px; max-width: 220px; }
+  .menu-btn { display: flex; }
+  .nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: min(86vw, 360px);
+    height: 100dvh;
+    padding: 96px 24px 24px;
+    background: rgba(10, 14, 26, 0.98);
+    backdrop-filter: blur(20px);
+    border-left: 1px solid rgba(255,255,255,.08);
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+    transition: right .3s ease;
+    z-index: 1001;
+  }
+  .nav.open { right: 0; }
+  .nav__link { padding: 14px 16px; font-size: 1rem; }
+  .hero { min-height: auto; padding: 130px 0 90px; }
+  .hero__title { font-size: clamp(2rem, 9vw, 3rem); }
+  .hero__subtitle { font-size: 1rem; }
+  .hero__actions .btn { width: 100%; }
+  .hero__stats { gap: 12px; }
+  .hero__stat strong { font-size: 1.55rem; }
+  .section { padding: 72px 0; }
+  .section__header { margin-bottom: 36px; }
+  .contato__grid { grid-template-columns: 1fr; }
+  .footer__inner { text-align: center; justify-content: center; }
+}
+
+@media (max-width: 480px) {
+  .container { padding-left: 16px; padding-right: 16px; }
+  .logo__img { height: 54px; max-width: 190px; }
+  .hero { padding-top: 115px; }
+  .hero__stats { grid-template-columns: 1fr; }
+  .hero__stat { padding: 12px 0; }
+  .servicos__grid { grid-template-columns: 1fr; }
+  .servico-card { aspect-ratio: 1.35 / 1; }
+  .sobre__grid { grid-template-columns: 1fr; }
+  .btn { width: 100%; padding: 13px 20px; }
+  .hero__contact { align-items: flex-start; flex-direction: column; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
 @media (max-width: 1200px) {
   .servicos__grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -1024,4 +1091,60 @@ img { max-width: 100%; display: block; }
   .sobre__grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+}
+
+
+/* ===== Identidade visual M&F ELEVADORES ===== */
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  min-width: 0;
+}
+.brand .logo__img {
+  height: clamp(58px, 7vw, 88px);
+  width: auto;
+  max-width: 150px;
+  object-fit: contain;
+  flex: 0 0 auto;
+}
+.brand__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 0;
+  line-height: 1.05;
+}
+.brand__text strong {
+  font-size: clamp(1.15rem, 2.2vw, 1.85rem);
+  letter-spacing: .02em;
+  white-space: nowrap;
+  color: #f4f7fb;
+}
+.brand__text strong span {
+  color: #168cff;
+}
+.brand__text small {
+  margin-top: 8px;
+  color: #c9d4e1;
+  font-size: clamp(.58rem, 1vw, .78rem);
+  letter-spacing: .03em;
+  white-space: nowrap;
+}
+.brand__text i {
+  color: #168cff;
+  font-style: normal;
+  margin: 0 4px;
+}
+@media (max-width: 768px) {
+  .brand { gap: 9px; }
+  .brand .logo__img { height: 56px; max-width: 105px; }
+  .brand__text strong { font-size: 1.05rem; }
+  .brand__text small { font-size: .55rem; margin-top: 5px; letter-spacing: 0; }
+  .brand__text i { margin: 0 2px; }
+}
+@media (max-width: 420px) {
+  .brand .logo__img { height: 48px; max-width: 86px; }
+  .brand__text strong { font-size: .92rem; }
+  .brand__text small { font-size: .47rem; }
 }
